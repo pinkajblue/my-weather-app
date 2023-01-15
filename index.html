@@ -13,11 +13,42 @@
     />
 
     <title>My Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <h1>My weather app</h1>
-      <a href="" class="btn btn-primary">Click</a>
+      <div class="weather-app"></div>
+      <h1>Lisbon</h1>
+      <ul>
+        <li class="day">Sunday 16:27</li>
+        <li class="day">Cloudy</li>
+      </ul>
+      <div class="row">
+        <div class="col-6">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="Clear"
+          />
+          12°C | °F
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>Humidity: 73%</li>
+            <li>Wind: 2km/h</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <small>
+        <a href="https://github.com/pinkajblue/my-weather-app" target="_blank"
+          >Open-source code</a
+        >, by SaraCodes</small
+      >
     </div>
     <script src="src/app.js" ;></script>
   </body>
