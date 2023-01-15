@@ -1,17 +1,49 @@
-h1 {
+body {
   font-family: "Comfortaa", cursive;
-  width: 500;
-  text-align: center;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+  color: #878787;
+  line-height: 28px;
+  margin: 18px auto;
+  margin-bottom: 0px;
 }
 ul {
-  font-family: "Comfortaa", cursive;
-  list-style: none;
-}
-.day {
-  text-align: center;
-  display: block;
+  margin: 5px 0;
   padding: 0;
 }
-.col-6 {
-  font-family: "Comfortaa", cursive;
+li {
+  list-style: none;
+  color: #878787;
+  font-size: 18px;
+}
+.description {
+  font-size: 12px;
+}
+.weather-temperature img {
+  margin: 10px;
+  float: left;
+  width: 64px;
+}
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1;
+  padding: 10px;
+}
+.weather-temperature .units {
+  position: relative;
+  font-size: 18px;
+  top: 9px;
 }
