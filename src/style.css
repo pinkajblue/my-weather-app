@@ -26,6 +26,8 @@ li {
   list-style: none;
   color: #878787;
   font-size: 18px;
+}
+li::first-letter {
   text-transform: capitalize;
 }
 .description {
