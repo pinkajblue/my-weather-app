@@ -25,30 +25,66 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <div class="row">
-            <div class="col-6">
-              <h1 id="city"></h1>
-              <ul>
-                <li>Last updated: <span id="date"></span></li>
-                <li id="condition"></li>
-              </ul>
-            </div>
-
-            <div class="col-6">
-              <div class="d-flex weather-temperature">
-                <img src="" alt="Clear" id="icon" />
-
-                <strong id="temperature"></strong>
-                <span class="units">°C | <a href="#">°F</a></span>
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
               </div>
             </div>
-            <div class="col-3">
-              <ul>
-                <li class="description">
-                  Humidity: <span id="humidity"></span>%
-                </li>
-                <li class="description">Wind: <span id="wind"></span>km/h</li>
-              </ul>
+          </form>
+
+          <div class="elements">
+            <div class="row">
+              <div class="col-7">
+                <h1 id="city"></h1>
+              </div>
+
+              <div class="col-5">
+                <div class="d-flex weather-temperature">
+                  <img src="" alt="Clear" id="icon" />
+
+                  <strong id="temperature"></strong>
+                  <span class="units">°C | <a href="#">°F</a></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8">
+                  <ul>
+                    <li>Last updated: <span id="date"></span></li>
+                  </ul>
+                </div>
+                <div class="col-4">
+                  <ul>
+                    <li id="condition"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4">
+                  <ul>
+                    <li class="description">
+                      Humidity: <span id="humidity"></span>%
+                    </li>
+                    <li class="description">
+                      Wind: <span id="wind"></span>km/h
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

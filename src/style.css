@@ -25,13 +25,14 @@ ul {
 li {
   list-style: none;
   color: #878787;
-  font-size: 18px;
+  font-size: 15px;
+  padding: 10px 0 0 0;
 }
 li::first-letter {
   text-transform: capitalize;
 }
 .description {
-  font-size: 12px;
+  font-size: 10px;
 }
 .weather-temperature img {
   margin: 10px;
@@ -49,4 +50,7 @@ li::first-letter {
   position: relative;
   font-size: 18px;
   top: 9px;
+}
+.elements {
+  padding: 20px 0 0 0;
 }

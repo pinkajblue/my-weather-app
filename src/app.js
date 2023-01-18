@@ -42,9 +42,16 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
-
-let apiKey = "f3a99498f95e6ba0ed1592c727f9f96a";
-let city = "Trebnje";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-axios.get(apiUrl).then(displayTemperature);
+function search(city) {
+  let apiKey = "f3a99498f95e6ba0ed1592c727f9f96a";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+search("Sydney");
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
