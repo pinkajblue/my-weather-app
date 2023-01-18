@@ -44,7 +44,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "f3a99498f95e6ba0ed1592c727f9f96a";
-let city = "Sydney";
+let city = "Trebnje";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
