@@ -32,7 +32,7 @@ li::first-letter {
   text-transform: capitalize;
 }
 .description {
-  font-size: 10px;
+  font-size: 13px;
 }
 .weather-temperature img {
   margin: 10px;
@@ -79,4 +79,7 @@ li::first-letter {
 }
 .weather-forecast-temperature-min {
   opacity: 0.5;
+}
+.weather-forecast-day {
+  border: 1px solid #dadde1;
 }
