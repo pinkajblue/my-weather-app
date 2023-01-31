@@ -31,6 +31,12 @@ li {
 li::first-letter {
   text-transform: capitalize;
 }
+.form-control {
+  line-height: 1.5;
+}
+.btn-primary {
+  line-height: 1.5;
+}
 .description {
   font-size: 13px;
 }
@@ -82,4 +88,14 @@ li::first-letter {
 }
 .weather-forecast-day {
   border: 1px solid #dadde1;
+  border-radius: 8px;
+  padding: 10px 0;
+}
+.under-temp {
+  text-align: end;
+}
+hr {
+  border: 2px solid #878787;
+  border-radius: 8px;
+  margin: 20px 0;
 }
