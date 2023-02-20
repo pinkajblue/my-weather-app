@@ -13,13 +13,17 @@ body {
 }
 .weather-app-wrapper {
   max-width: 500px;
+
   margin: 85px auto;
 }
 .weather-app {
   padding: 20px;
-  border: 3px solid rgb(255, 255, 255);
+  background: orange;
+  border: 5px solid rgb(249, 245, 245);
+  height: 550px;
   border-radius: 10px;
-  background-color: rgba(40, 39, 39, 0.6);
+  box-shadow: initial;
+  opacity: 0.8;
 }
 h1 {
   font-weight: 500;
@@ -29,6 +33,7 @@ h1 {
   margin-bottom: 13px;
   color: rgb(255, 255, 255);
   font-size: 50px;
+  opacity: 0.9;
 }
 
 ul {
@@ -89,9 +94,9 @@ li::first-letter {
   text-decoration: none;
 }
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 20px auto;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .weather-forecast-date {
@@ -101,10 +106,10 @@ li::first-letter {
   font-size: 13px;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .weather-forecast-day {
-  border: 2px solid #dadde1;
+  border: 2px solid white;
   border-radius: 8px;
   padding: 10px 0;
 }
@@ -117,16 +122,16 @@ hr {
   margin: 13px 0;
 }
 small {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 a:link {
-  color: pink;
+  color: #0d6efd;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: pink;
+  color: #0d6efd;
   background-color: transparent;
   text-decoration: none;
 }
@@ -135,4 +140,9 @@ a:hover {
   color: rgb(31, 77, 137);
   background-color: transparent;
   text-decoration: none;
+}
+p {
+  color: white;
+  text-align: center;
+  font-size: 15px;
 }
